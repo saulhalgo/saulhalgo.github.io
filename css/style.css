@@ -1,0 +1,334 @@
+@font-face {
+    font-family: letrapf;
+    src: url(/letra1.ttf.otf);
+}
+
+body {
+    font-family: letrapf;
+    background-color:white;
+    display: flex; /* Esto hace que el cuerpo sea un contenedor flexible */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 40vh; /* Asegura que el cuerpo ocupe toda la altura de la pantalla */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+h1 {
+    font-size: 80px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center; 
+
+}
+
+.border {
+    text-align: center;
+    color: black;
+    top: 50px;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    1px 1px 0 white,
+    -1px 1px 0 white;
+}
+
+.wave {
+    text-align: center;
+    top: 50px;
+    color: #09f;
+    animation: wave 2s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+}
+
+
+@keyframes wave{
+    0%, 100% {
+        clip-path :polygon(
+            0% 47%,
+            10% 48%,
+            33% 54%,
+            54% 60%,
+            70% 61%,
+            84% 59%,
+            100% 52%,
+            100% 100%,
+            0% 100%
+        );
+    }
+
+
+50% {
+    clip-path: polygon(
+        0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+    );
+}
+}
+
+.Imagen1{
+   
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    border: 8px  solid black;
+    position: absolute;
+    top: 250px;
+    left:350px ;
+    
+}
+
+.Imagen2{
+   
+
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    border: 8px  solid black;
+    position: absolute;
+    top: 250px;
+    left:650px ;
+}
+
+.Imagen3{
+   
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    border: 8px  solid black;
+    position: absolute;
+    top: 250px;
+    left:950px ;
+
+}
+.b1{
+    position: absolute;
+    font-size: 20px;
+    bottom: 250px;
+    left: 400px;
+    background-color: #343a40;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+    
+}
+.b2{
+    position: absolute;
+    bottom: 250px;
+    left: 670px;
+    font-size: 20px;
+    background-color: #343a40;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none; 
+}
+.b3{
+    position: absolute;
+    bottom: 250px;
+    right:490px;
+    font-size: 20px;
+    background-color: #343a40;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none; 
+}
+
+.img1 {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 250px;
+    right: 670px;
+    border-radius: 30px;
+
+  
+  }
+  
+  .img1:hover {
+    filter: blur(5px);
+  }
+.Bote{
+    position: absolute;
+    top: 500px;
+    right: 735px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.precio{
+    color: black;
+    position: absolute;
+    top: 530px;
+    right: 780px;
+    font-size: 28px;
+    text-decoration: none;
+}
+.Bote1{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 180px;
+    left: 50px;
+}
+
+.contenedor{
+    display: flex; /*Sepa que coño es esto*/
+    justify-content: center;
+}
+
+.Bote1:hover{
+    filter:blur(5px);
+}
+.img2{
+    height: 250px;
+    width: 250px;
+    position: absolute; 
+    top: 250px;
+    left: 250px;
+    border-radius: 30px;
+}
+.img2:hover{
+    filter: blur(5px);
+}
+.Cloro{
+    position: absolute;
+    top: 500px;
+    left: 350px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+.Precio2{
+    color: black;
+    position: absolute;
+    top: 530px;
+    left: 350px;
+    font-size: 28px; 
+    text-decoration: none;
+}
+.img3{
+    height: 250px;
+    width: 250px;
+    position: absolute; 
+    top: 250px;
+    right: 260px;
+    border-radius: 30px;
+}
+.img3:hover{
+    filter: blur(5px);
+}
+.Jabon{
+    position: absolute;
+    top: 500px;
+    right: 320px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+.Precio3{
+    color: black;
+    position: absolute;
+    top: 530px;
+    right: 370px;
+    font-size: 28px; 
+    text-decoration: none;
+}
+.img4{
+    height: 250px;
+    width: 250px;
+    position: absolute; 
+    top: 600px;
+    right: 260px;
+    border-radius: 30px;
+}
+.img4:hover{
+    filter: blur(5px);
+}
+.Pisos{
+    position: absolute;
+    top: 850px;
+    right: 320px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+.Precio4{
+    position: absolute;
+    top: 880px;
+    right: 370px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    text-decoration: none;
+}
+.img5{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 600px;
+    right: 670px;
+    border-radius: 30px;
+}
+.img5:hover{
+    filter: blur(5px);
+}
+.Escoba{
+    position: absolute;
+    top: 850px;
+    right: 720px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+.Precio5{
+    position: absolute;
+    top: 880px;
+    right:780px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    text-decoration: none;
+}
+.img6{
+    height: 250px;
+    width: 250px;
+    position: absolute; 
+    top: 600px;
+    left: 250px;
+    border-radius: 30px;
+}
+.img6:hover{
+    filter: blur(5px);
+}
+.Vidrios{
+    position: absolute;
+    top: 850px;
+    left: 300px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+.Precio6{
+    color: black;
+    position: absolute;
+    top: 880px;
+    left: 350px;
+    font-size: 28px; 
+    text-decoration: none;
+}
